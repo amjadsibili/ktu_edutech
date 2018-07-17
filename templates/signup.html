@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<form method="post" action="/signup">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.first_name.label }}
+        {{ form.first_name }}
+    </div>
+    <div>
+        {{ form.last_name.label }}
+        {{ form.last_name }}
+    </div>
+    <div>
+        {{ form.email.label }}
+        {{ form.email }}
+    </div>
+    <div>
+        {{ form.password.label }}
+        {{ form.password }}
+    </div>
+    <div>
+        {{ form.confirm.label }}
+        {{ form.confirm }}
+    </div>
+    <div>
+        {{ form.pno.label }}
+        {{ form.pno }}
+    </div>
+    <div>
+        {{ form.college.label }}
+        {{ form.college}}
+    </div>
+    <div>
+        {{ form.security_qa.label }}
+        {{ form.security_qa }}
+    </div>
+    <div>
+        {{ form.submit }}
+    </div>
+</form>
+</body>
+</html>
