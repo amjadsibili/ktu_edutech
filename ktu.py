@@ -11,7 +11,7 @@ from forms import SignupForm, LoginForm
 from models import User, db
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mamm0th@localhost:5432/test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/test'
 app.secret_key = 'development-key'
 db.init_app(app)
 
